@@ -1,0 +1,120 @@
+/* main.css */
+
+/* Basic reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Split screen */
+.split {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.left {
+    left: 0;
+    background-color: #f2f2f2;
+}
+
+.right {
+    right: 0;
+    background-color: #ffffff;
+}
+
+/* Centered content */
+.centerd {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Image styling */
+.split img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Container styling */
+.container {
+    margin-top: 10%;
+}
+
+/* Comment section styling */
+.comment-button {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.commented-section {
+    padding: 10px;
+}
+
+.commented-user {
+    font-weight: bold;
+}
+
+/* Textarea styling */
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Label styling */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Mobile responsive adjustments */
+@media screen and (max-width: 768px) {
+    .split {
+        width: 100%;
+        height: 50%;
+    }
+
+    .left {
+        top: 0;
+    }
+
+    .right {
+        top: 50%;
+    }
+
+    .centered {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .container {
+        margin-top: 5%;
+    }
+}
