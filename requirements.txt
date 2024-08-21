@@ -78,13 +78,13 @@ prometheus_client==0.20.0
 prompt_toolkit==3.0.47
 psutil==6.0.0
 pure_eval==0.2.3
-pycparser==2.22
 Pygments==2.18.0
+pycparser==2.22
 pyparsing==3.1.2
 python-dateutil==2.9.0.post0
 python-json-logger==2.0.7
 pytz==2024.1
-pywin32==306
+# pywin32==306 (removed, only needed for Windows)
 pywinpty==2.0.13
 PyYAML==6.0.2
 pyzmq==26.1.0
